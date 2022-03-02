@@ -1,0 +1,9 @@
+.loader{
+    width: 64px;
+    height: 64px;
+    border: 16px solid #c51ab7ab;
+    border-top: 16px solid #087777;
+    border-radius: 50%;
+    animation: girar 2s linear infinite;
+}
+
