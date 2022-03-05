@@ -1,0 +1,24 @@
+@keyframes animacion_test{
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: white;
+		
+    }
+	
+	
+}
+
+
+
+.anima{
+    width: 100%;
+    background-color: red;
+    color: black;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    animation: animacion_test 2s alternate infinite;
+}
