@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+ 
+<meta charset="8">
+ 
+<title>Multiplicar Números</title>
+ <link rel="stylesheet" href="css/regla.css">
+ 
+ 
+ 
+</head>
+ 
+<body>
+    <header><h1> Regla de 3</h1>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<form id="multiplicar">
+ 
+  <input type="text" id="div1" value=0 onChange="multiplicar();">
+ 
+  <input type="text" id="mul2" value=0 onChange="multiplicar();">
+ 
+  <input type="text" id="mul1" value=0
+  onChange="dividir();">
+ 
+ 
+ 
+ 
+  <input type="button" id="ya" value="calcular!" onclick="calc()" >
+ 
+  <input type="reset" id="volver">
+ 
+ 
+</form>
+    <div id="resultado"></div>
+ 
+    <script type="text/javascript">
+ 
+function calc(){
+ 
+ var	m1 = document.getElementById("div1").value;
+ var     m2 = document.getElementById("mul2").value;
+var      m3= document.getElementById("mul1").value;
+ var      m5= (m1+m2);
+ var   m6=(m1*100);
+ var m7 =(m6/m5);
+   document.getElementById("resultado").innerHTML=
+       'es igual a'+ m7;
+    }
+ 
+ 
+ 
+ 
+ 
+</script>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</body>
+ 
+</html>
+ 
+ 
+ 
+ 
+ 
