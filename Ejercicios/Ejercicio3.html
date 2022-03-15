@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercios de JS</title>
+    <title>Ejercios de JS3</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,8 +12,47 @@
 
 <body>
 
+<h1>
+Ejercicio de descuento con 15%
+</h1>
+<form>
+
+<label>ingrese su candtidad total</label>
+<input type="number" id="total" value="">
+
+<input type="button" id="porcentaje" value="Porcentaje" onclick="Calcular()">
+<br>
+<br>
+<label>Su cantidad es...</label>
+<div id="resultado"></div>
+
+    </form>
+    <script type="text/javascript"> 
+    function Calcular(){
+
+        var mt= document.getElementById("total").value;
+        var mr= mt*15;
+        var mr2= mr/100;
+        var mr3= mt-mr2;
 
 
 
-    
+
+
+        document.getElementById("resultado").innerHTML=
+        'ya aplicando el 15% es $' 
+         +mr3;
+    }
+
+
+
+
+    </script>
+
+
+
+
+
+
+
 </body>
