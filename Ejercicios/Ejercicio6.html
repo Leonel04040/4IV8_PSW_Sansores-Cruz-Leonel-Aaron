@@ -5,38 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercios de JS 6</title>
- 
+    <link rel="stylesheet" href="css/estud.css">
 </head>
 
 
 
-<body>
-    <form method="post" name="formulario2" action="">
-        <label>Realizar un algoritmo que calcule la edad de un usuario  </label>
-        <table>
-            <tr>
-                <td>Introduce su año de nacimiento: </td>
-                <td> <input type="number" name="año" 
-                    onkeypress= "validaranio(event)"> </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td> <input type="button" value="Edad"
-                    onclick="Edad()"> </td>
-            </tr>
-            <tr>
-                <td>Su edad es:</td>
-                <td> <input type="text" name="Anio1"
-                    id="edadI" readonly="readonly" 
-                    class="input_text" > </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="button" value="Borrar Datos" 
-                    name="borrar" onclick="borrar()" ></td>
-            </tr>
-        </table>
-    </form>
-    <script src="js/edad.js" ></script>
+<body bgcolor="#FFFFF">
+    <form>
+       <center><label><h1><div class="animada">un algoritmo que calcule la edad de un usuario</div></h1> </label>
+        <br>
+        <label >Introduzca su año de nacimeinto</label>
+        <input type="number" id="anio" value="">
+        <input type="button" id="edad" value="Calcular" 
+        onclick="Edad()">
+	  <input type="reset" id="volver"></center>
+        
+
+</form>
+	<center><div id="resultado"></div></center>
+        <script type="text/javascript">
+
+            function Edad(){
+                var a1=document.getElementById("anio").value;
+                
+                if (a1>2022){
+
+                    document.getElementById("resultado").innerHTML=
+                    'su año no es valida';     
+                   
+
+
+                }
+                else if (a1<1922){
+                   
+                    document.getElementById("resultado").innerHTML=
+                    'su año no es valida';     
+                   
+
+
+                }
+                else {
+
+                    var a2=(2022-a1);
+
+                    document.getElementById("resultado").innerHTML=
+                    'Su edad es:'+a2;
+
+
+                }
+                
+
+
+
+                
+                
+
+
+                
+                
+
+            }
+
+
+
+        </script>
 </body>
+</html>
 </html>
