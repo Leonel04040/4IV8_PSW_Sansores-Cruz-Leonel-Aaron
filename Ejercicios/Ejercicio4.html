@@ -9,10 +9,114 @@
 </head>
 
 
-<body>
-
-
-
-
+<body bgcolor="#FFFFF">
+<form>
+   <center> <label><h1>Calificacion</h1></label>
+<br>
+<br>
+<table>
+    <tr>
+<td><label> Ingrese sus tres calificaciones parciales de 0-30 </label></td>
+<td><input type="number" id="cal" name="calificacion">
+<br>
+<input type="number" id="cal2" name="calificacion">
+<br>
+<input type="number" id="cal3" name="calificacion"></td>
+<br>
+</tr>
+<tr>
+<td><label>Ingrese la calificacion de su examen de (0-16.2)</label></td>
+<br>
+<td><input type="number" id="cale" name="calificacion"></td>
+<br>
+</tr>
+<tr>
+<td><label>Ingrese la calificaion de su trabajo final de (0-8.1)</label></td>
+<td><input type="number" id="calt" name="calificacion"></td>
+</tr>
+</table>
+<br>
+<br>
+<input type="button" id="calcular" value="Calcular" onclick="Qwer()">
+</form>
+<div id="resultado"></div> </center>
     
+<script type="text/javascript">
+
+    function Qwer(){
+         
+        var m1= document.getElementById("cal").value;
+        var m2= document.getElementById("cal2").value;
+        var m3= document.getElementById("cal3").value;
+        var m4=document.getElementById("cale").value;
+        var m5=document.getElementById("calt").value;
+        if(m1>10){
+
+            document.getElementById("resultado").innerHTML=
+                    'su calificacion no es valida';  
+
+        }
+        else if(m2>10){
+
+            document.getElementById("resultado").innerHTML=
+                    'su calificacion no es valida';  
+
+        }
+       else if(m3>10){
+
+
+             document.getElementById("resultado").innerHTML=
+            'su calificacion no es valida';  
+
+
+       }
+       else if (m4>16.2){
+
+        document.getElementById("resultado").innerHTML=
+            'su calificacion no es valida';  
+       }
+       else if (m5>8.1){
+
+        document.getElementById("resultado").innerHTML=
+            'su calificacion no es valida';  
+
+
+       }
+       else{
+        
+        var mq=m1*1+m2*1+m3*1;
+        var mw=(mq*100)/54.4
+        var mi=(m4*100)/54.4;
+        var mu=(m5*100)/54.4;
+        var total=mw+mi+mu;
+
+        document.getElementById("resultado").innerHTML=
+        'su calificacion en porcentaje es %' 
+         +total;
+
+
+       }
+        
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+</script>
 </body>
+
+
+
+
+
+
+</html>
