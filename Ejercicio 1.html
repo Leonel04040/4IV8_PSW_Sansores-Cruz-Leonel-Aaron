@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+<h1>Ejercicio 1:<p>Leer 2 numeros; si son iguales que los multiplique, si el primero es mayor que el segundo que los reste sino que los sume </p></h1>    
+    <label>Numero uno</label>
+    <input type="number" id="N1" name="numero1">
+    <label>Numero 2</label>
+    <input type="number" id="N2" name="numero2">
+    <input type="button" value="calcular" onclick="accion()">
+    <div id="resultado"></div>
+
+    <script type="text/javascript">
+        function accion(){
+
+            var N1=document.getElementById("N1").value;
+            var N2=document.getElementById("N2").value;
+
+            if(N1=N2){
+
+                var multi=N1*N2;
+                document.getElementById("resultado").innerHTML=
+                 'el resultado' 
+                +multi;
+
+            }
+            else if(N1>N2){
+                var rest=(m1*1)-(m2*1);
+                document.getElementById("resultado").innerHTML=
+                'el resultado' 
+                +rest;     
+
+
+
+            }
+            else if (N1<N2){
+                var 
+
+
+
+
+
+            }
+
+
+
+
+        }
+
+
+    </script>
+
+</body>
+</html>
